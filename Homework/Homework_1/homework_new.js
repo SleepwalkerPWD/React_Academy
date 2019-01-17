@@ -17,7 +17,7 @@ let sponsors = {
     rus: ['RusAuto', 'SBO']
 };
 
-//Деструктуризация
+//Деструктуризация объекта
 const {cash, eu, eu: [SRL], rus} = sponsors;
 
 //Параметр по умолчанию
@@ -30,7 +30,7 @@ const calcCash = (cash, own = 0) => {
 
 let money = calcCash(cash);
 
-//Оператор Spread
+//Оператор Spread + Интерполяция
 const makeBusiness = (cash, emp, arr1, arr2, director = 'Victor', owner = 'Sam') => {
     console.log(`We have a business. Owner: ${owner}, director: ${director}. Our budget: ${cash}. And our employers: ${emp}`);
     console.log(`And we have a sponsors: `);
