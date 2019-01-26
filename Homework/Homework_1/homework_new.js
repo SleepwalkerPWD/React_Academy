@@ -1,13 +1,10 @@
 //Массив
 let employers = ['Alex', '', 'ludmila', 'Viktor', '', 'oleg', 'iNna', 'Ivan', 'Alex', 'Olga', ' Ann'];
 
-//Метод массива filter
+//Методы массива filter и map
 employers = employers.filter((name) => {
     return name.length > 0 && name.length != '';
-});
-
-//Метод массива map
-employers = employers.map((item) => {
+}).map((item) => {
     return item.toLowerCase().trim();
 });
 
